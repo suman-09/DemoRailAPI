@@ -9,6 +9,14 @@ const trainSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    timing: {
+        start: {
+            type: String
+        },
+        end: {
+            type: String
+        }
+    },
     info: {
         starting:{
             type: String,

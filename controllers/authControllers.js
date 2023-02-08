@@ -1,10 +1,10 @@
 const Train = require("../models/trains");
 
-// crating students
+// crating trains
 module.exports.train_register = (req,res) => {
-    const user = new Train(req.body);
-    user.save().then(() => {
-        res.status(201).send(user);
+    const train = new Train(req.body);
+    train.save().then(() => {
+        res.status(201).send(train);
     }).catch((e) => {
         res.status(400).send(e);
     })
