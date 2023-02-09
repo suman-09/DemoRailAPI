@@ -9,3 +9,13 @@ module.exports.train_register = (req,res) => {
         res.status(400).send(e);
     })
 }
+
+
+// crating trains
+module.exports.train_availability = (req,res) => {
+    Train.find().then((result) => {
+        res.send(result);
+    }).catch((err) => {
+        console.log(err);
+    })
+}
