@@ -31,24 +31,13 @@ const trainSchema = new mongoose.Schema({
         }
     },
     availability: {
-        A1: {
-            type: Number
-        },
-        A2: {
-            type: Number
-        },
-        A3: {
-            type: Number
-        },
-        SL: {
-            type: Number
-        },
-        CC: {
-            type: Number
-        },
-        S2: {
-            type: Number
-        }
+        date: [String],
+        A1: [Number],
+        A2: [Number],
+        A3: [Number],
+        SL: [Number],
+        CC: [Number],
+        S2: [Number]
     }
 })
 
